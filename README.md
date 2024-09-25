@@ -27,7 +27,7 @@ Using the following command <br>
 ``
 curl -sO https://packages.wazuh.com/4.9/wazuh-install.sh && sudo bash ./wazuh-install.sh -a 
 ``
-with this command the package will be downloaded and also install it .<br>
+with the command the package will download and install .<br>
 *Ref 1: wazuh-Assited-install-ubuntu-cloud*
 ![wazuh-assist-install-cloud](https://github.com/user-attachments/assets/649eb8f3-d3a1-44bf-aeb5-8a86953a976d)
 
@@ -37,16 +37,18 @@ Configuring the firewall to allow tcp trafiic on 5601<br>
 Reloading it with the following command:<br>
 ``sudo ufw allow 5601/tcp
 sudo ufw reload
-``
-*Ref 2: ufw-ubuntu-cloud*
+``<br>
+*Ref 2: ufw-ubuntu-cloud*<br>
 ![wazuh-cloud-firewall-allow](https://github.com/user-attachments/assets/2f0200a6-b543-4554-bed6-f84311ab9019)
 ## Step-3
 For the usernames and passwords in wazuh we can use the following command to see the credentials<br>
 `` tar -O -xvf wazuh-install-files.tar wazuh-install-files/wazuh-passwords.txt
 wazuh-install-files/wazuh-passwords.txt``
 <br>
-After that we can now go the web-browser and use the synatax to go to the dashboard of wazuh<br>
+After that we can now go to the web-browser and use the synatax to go to the dashboard of wazuh<br>
 ``https://<ip-address-of-cloud-instance>:443``<br>
+*Ref 3: Login-dashboard*
+
 
 *Ref 1: Network Diagram*
 
