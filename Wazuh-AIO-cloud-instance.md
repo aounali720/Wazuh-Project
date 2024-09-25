@@ -38,6 +38,8 @@ Reloading it with the following command:<br>
 ``sudo ufw allow 5601/tcp
 sudo ufw reload
 ``<br>
+NOTE in our instance the firewall is set to default meaning everyport is open,In a custom firewall we would need to open the specific ports to let the connections to be allowed.<br>
+
 *Ref 2: ufw-ubuntu-cloud*<br>
 ![wazuh-cloud-firewall-allow](https://github.com/user-attachments/assets/2f0200a6-b543-4554-bed6-f84311ab9019)
 ## Step-3
@@ -52,7 +54,7 @@ Login with the web-dashboard credential<br>
 
 ![wazuh dashboard](https://github.com/user-attachments/assets/755d2afb-1799-4446-a03b-c73b9775c31d)
 
-#Conclusion:
+# Conclusion:
 With this we have successfully installed wazuh All-In-One on the ubuntu cloud instance 
 
 
