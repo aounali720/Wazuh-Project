@@ -49,6 +49,8 @@ After that we can now go to the web-browser and use the synatax to go to the das
 ``https://<ip-address-of-cloud-instance>:443``<br>
 *Ref 3: Login-dashboard*
 
+![wazuh dashboard](https://github.com/user-attachments/assets/755d2afb-1799-4446-a03b-c73b9775c31d)
 
 *Ref 1: Network Diagram*
+
 
