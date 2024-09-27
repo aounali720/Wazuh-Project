@@ -58,13 +58,36 @@ On the Dashboard in the top left corner we can see the agent summary and see the
 Here we can see the windows-agent has connected and sending logs.<br>
 
 ### Ubuntu-Agent
+## Step-1
 Now we are going to set up on a linux-virtual-Machine <br>
 open the terminal.<br>
-Using the following command we can download and install wazuh agent on the machine.<br>
+Using the following command we can connect the wazuh agent key repo on the machine.<br>
 ``
+apt-get install gnupg apt-transport-https
+curl -s https://packages.wazuh.com/key/GPG-KEY-WAZUH | apt-key add -
+echo "deb https://packages.wazuh.com/4.x/apt/ stable main" | tee -a /etc/apt/sources.list.d/wazuh.list 
+``<br>
 
+For debian-7,8 and 14 for other check wazuh agent Documentation.<br>
+*Ref 7: agent ubuntu*
+![agent-install-on-ubuntuvm](https://github.com/user-attachments/assets/3603aa64-24a8-44ea-a1ca-7f500f1d36a1)
+The necessary dependencies will be downloaded.<br>
+## Step-2
+To connect to Wazuh manager and download wazuh agent use the following command  .<br>
+Change the ip to the wazuh cloud ip <br>
+``WAZUH_MANAGER="10.0.0.2" apt-get install wazuh-agent``<br>
+
+## Step-3
+After the installation is completed .<br>
+Using the following command we can configure our machine to start wazuh agent on startup.<br>
+``systemctl daemon-reload
+systemctl enable wazuh-agent
+systemctl start wazuh-agent
+``
+<br>
 
 Example below.
+
 
 *Ref 1: Network Diagram*
 
