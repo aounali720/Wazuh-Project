@@ -85,13 +85,23 @@ Using the following command we can configure our machine to start wazuh agent on
 ``systemctl daemon-reload
 systemctl enable wazuh-agent
 systemctl start wazuh-agent
-``
+``<br>
+
+*Ref 8: system ctl command*
+![using system ctl for agent](https://github.com/user-attachments/assets/5af2a73d-902a-47f2-a773-149c3902e1b2)
 <br>
 
-Example below.
+## Step-4
+After the installation has completed and the wazuh agent has started.<br>
+We can now go to the wazuh dashboard to check the agent status.<br>
+*Ref 9: agent summary*
+![dashboard wazuh agents ](https://github.com/user-attachments/assets/8274f0da-fec2-4243-af1c-fa8f5b68a6e5)
+Here we can see the agent(endpoint) has connected to the wazuh server .<br>
+
 
 
 *Ref 1: Network Diagram*
+
 
 
 
