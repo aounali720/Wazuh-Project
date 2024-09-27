@@ -33,9 +33,23 @@ Run the wazuh-agent.exe file on the endpoint<br>
 After the installation has completed <br>
 Check the " Run wazuh agent configuration interface " and click finish<.br>
 
+## Step-2:
+In the interface enter the manager ip that is your wazuh ip meaning (cloud ip for connection) and save.<br>
+*Ref 2: Agent-interface*
+![wazuh agent interface](https://github.com/user-attachments/assets/b28c3b16-e3c2-40f9-99a8-48dbdfe2bad6)
+After that go in the config view in the view tab <br>
+Here we are going to configure the  config file to enable osquery for osquery integration.<br>
+*Ref 3: Osquery-config*
+![agent windows os query on](https://github.com/user-attachments/assets/55f1359c-a1b8-496e-acec-ab272b09c5dc)
+And in the view tab we can view the logs of the log file that are going to be monitored.<br>
+After restarting the agent the api key will be generated <br>
+
+
 
 
 Example below.
 
 *Ref 1: Network Diagram*
+
+
 
