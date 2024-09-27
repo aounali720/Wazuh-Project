@@ -43,6 +43,7 @@ Here we are going to configure the  config file to enable osquery for osquery in
 ![agent windows os query on](https://github.com/user-attachments/assets/55f1359c-a1b8-496e-acec-ab272b09c5dc)
 And in the view tab we can view the logs of the log file that are going to be monitored.<br>
 *Ref 4: Agent-logs*
+
 ![wazuh agent logs view](https://github.com/user-attachments/assets/f8a13c33-2207-4bea-9aad-58e2604636a2)<br>
 After restarting the agent the api key will be generated <br>
 ## Step-3:
@@ -70,7 +71,8 @@ echo "deb https://packages.wazuh.com/4.x/apt/ stable main" | tee -a /etc/apt/sou
 
 For debian-7,8 and 14 for other check wazuh agent Documentation.<br>
 *Ref 7: agent ubuntu*
-![agent-install-on-ubuntuvm](https://github.com/user-attachments/assets/3603aa64-24a8-44ea-a1ca-7f500f1d36a1)
+![add-repo-ubuntu-cloud](https://github.com/user-attachments/assets/81c16bd6-3109-43d7-acdb-61aaaf29aaed)
+
 The necessary dependencies will be downloaded.<br>
 ## Step-2
 To connect to Wazuh manager and download wazuh agent use the following command  .<br>
