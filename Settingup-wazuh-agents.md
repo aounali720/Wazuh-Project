@@ -55,8 +55,13 @@ On the Dashboard in the top left corner we can see the agent summary and see the
 *Ref 6: agent status*
 
 ![Screenshot 2024-09-28 014152](https://github.com/user-attachments/assets/34b976e9-4609-44ec-82cd-04ebc6c6ab73)<br>
-Here we can see the agent has connected and sending logs.<br>
+Here we can see the windows-agent has connected and sending logs.<br>
 
+### Ubuntu-Agent
+Now we are going to set up on a linux-virtual-Machine <br>
+open the terminal.<br>
+Using the following command we can download and install wazuh agent on the machine.<br>
+``
 
 
 Example below.
