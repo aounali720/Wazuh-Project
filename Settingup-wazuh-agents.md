@@ -42,8 +42,20 @@ Here we are going to configure the  config file to enable osquery for osquery in
 *Ref 3: Osquery-config*
 ![agent windows os query on](https://github.com/user-attachments/assets/55f1359c-a1b8-496e-acec-ab272b09c5dc)
 And in the view tab we can view the logs of the log file that are going to be monitored.<br>
+*Ref 4: Agent-logs*
+![wazuh agent logs view](https://github.com/user-attachments/assets/f8a13c33-2207-4bea-9aad-58e2604636a2)<br>
 After restarting the agent the api key will be generated <br>
+## Step-3:
+Now we check if our agent has connected with the wazuh server<br>
+Open the wazuh dashboard on the browser and check the agents.<br>
+*Ref 5: wazuh agent status*
 
+![wazuh-dashboard-agent-active](https://github.com/user-attachments/assets/905d6421-827b-4627-8294-1500bc215ee0)
+On the Dashboard in the top left corner we can see the agent summary and see the active agent.<br>
+*Ref 6: agent status*
+
+![Screenshot 2024-09-28 014152](https://github.com/user-attachments/assets/34b976e9-4609-44ec-82cd-04ebc6c6ab73)<br>
+Here we can see the agent has connected and sending logs.<br>
 
 
 
