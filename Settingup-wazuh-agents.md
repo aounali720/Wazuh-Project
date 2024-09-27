@@ -22,11 +22,20 @@ The Detection Lab project aimed to establish a controlled environment for simula
 - Network analysis tools (such as Wireshark) for capturing and examining network traffic.
 - Telemetry generation tools to create realistic network traffic and attack scenarios.
 
-## Steps
-drag & drop screenshots here or use imgur and reference them using imgsrc
+## Step-1:
+To install the wazuh agent on our endpoint(windows-machine)<br>
+We go to the wazuh official website to download the package (exe-file)<br>
+It is recommended to install the exefile the gui version for easier installation.<br>
+After the download has completed.<br>
+Run the wazuh-agent.exe file on the endpoint<br>
+*Ref 1: Wazuh-agent-install*
+![wazuh agent on widows intsall](https://github.com/user-attachments/assets/2815ae3d-0277-46b6-95da-19871f266a43)
+After the installation has completed <br>
+Check the " Run wazuh agent configuration interface " and click finish<.br>
 
-Every screenshot should have some text explaining what the screenshot is about.
+
 
 Example below.
 
 *Ref 1: Network Diagram*
+
