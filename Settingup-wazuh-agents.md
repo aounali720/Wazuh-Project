@@ -2,10 +2,8 @@
 # Wazuh-Agents
 
 ## Objective
-[Brief Objective - Remove this afterwards]
 The primary objective of installing the Wazuh agent on both Windows and Ubuntu virtual machines and configuring it to connect with the Wazuh Manager is to enable centralized security monitoring, threat detection, and incident response across multiple platforms. The Wazuh agent acts as a local component on the machines that gathers security event data, system logs, and other relevant information, which it then sends to the Wazuh Manager for analysis and correlation.
 ### Skills Learned
-[Bullet Points - Remove this afterwards]
 - System Administration and Configuration:
 
   - Gaining hands-on experience with both Windows and Ubuntu operating systems by installing software, configuring system services, and managing dependencies.
