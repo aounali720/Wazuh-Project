@@ -168,7 +168,6 @@ Here we can see the agent(endpoint) has connected to the wazuh server .<br>
 
 
 
-*Ref 1: Network Diagram*
 
 
 
