@@ -1,19 +1,56 @@
 
-# PROJECTNAME
+# Wazuh-Agents
 
 ## Objective
 [Brief Objective - Remove this afterwards]
-
-The Detection Lab project aimed to establish a controlled environment for simulating and detecting cyber attacks. The primary focus was to ingest and analyze logs within a Security Information and Event Management (SIEM) system, generating test telemetry to mimic real-world attack scenarios. This hands-on experience was designed to deepen understanding of network security, attack patterns, and defensive strategies.
-
+The primary objective of installing the Wazuh agent on both Windows and Ubuntu virtual machines and configuring it to connect with the Wazuh Manager is to enable centralized security monitoring, threat detection, and incident response across multiple platforms. The Wazuh agent acts as a local component on the machines that gathers security event data, system logs, and other relevant information, which it then sends to the Wazuh Manager for analysis and correlation.
 ### Skills Learned
 [Bullet Points - Remove this afterwards]
+- System Administration and Configuration:
 
-- Advanced understanding of SIEM concepts and practical application.
-- Proficiency in analyzing and interpreting network logs.
-- Ability to generate and recognize attack signatures and patterns.
-- Enhanced knowledge of network protocols and security vulnerabilities.
-- Development of critical thinking and problem-solving skills in cybersecurity.
+  - Gaining hands-on experience with both Windows and Ubuntu operating systems by installing software, configuring system services, and managing dependencies.
+- Package Management and Software Installation:
+
+- Learning how to install software packages using:
+  - Windows: Installing through installers (MSI/EXE) or using PowerShell.
+  - Ubuntu: Using package managers like apt to install the Wazuh agent.
+- Command-Line Proficiency:
+
+   - Linux/Ubuntu: Improving proficiency in terminal commands for navigating the file system, installing software, and managing services.
+   - Windows: Using PowerShell and Command Prompt to configure network settings and install the Wazuh agent.
+- Network Configuration:
+
+   - Understanding how to configure virtual machines to communicate with each other, particularly setting up network interfaces to enable the Wazuh agent to connect to the Wazuh Manager.
+  - Learning about ports, protocols, and firewall settings required for secure communication between the agent and the manager.
+- Agent Configuration:
+
+   -  Editing configuration files on both Windows and Linux systems (e.g., ossec.conf) to connect the Wazuh agent to the Wazuh Manager.
+   -  Understanding configuration parameters, such as manager IP address, agent ID, and encryption options.
+- Service Management:
+
+  -  Starting, stopping, and checking the status of the Wazuh agent service on both operating systems:
+  -  Ubuntu: Using systemctl to manage services.
+  -  Windows: Using services.msc or PowerShell for service control.
+- Log Management and Analysis:
+
+   - Learning where logs are stored on both systems and how to analyze logs to ensure that the Wazuh agent is functioning properly and communicating with the manager.
+   - Troubleshooting any connectivity or configuration issues by reviewing error logs and status reports.
+- Security Monitoring Setup:
+
+  - Understanding the Wazuh security architecture and learning how to set up agents for proactive monitoring, file integrity checking, log analysis, and event correlation across diverse environments.
+- Cross-Platform Troubleshooting:
+
+  - Identifying and resolving issues in different operating environments (Windows vs. Ubuntu), including troubleshooting connectivity, configuration, and service errors.
+ - Automation and Scripting:
+
+  - Writing or using scripts for automating the installation or configuration process, particularly in Ubuntu using Bash scripting or PowerShell scripting on Windows.
+Basic Cybersecurity Knowledge:
+
+  - Gaining a foundational understanding of security monitoring principles, log analysis, and how systems are monitored for security threats like malware, unauthorized access, and system changes.
+- Virtualization:
+
+   - Setting up and managing virtual machines on hypervisors like VMware, VirtualBox, or Hyper-V to simulate real-world environments.
+
 
 ### Tools Used
 [Bullet Points - Remove this afterwards]
