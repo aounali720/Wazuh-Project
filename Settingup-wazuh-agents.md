@@ -90,13 +90,8 @@ VirtualBox: An alternative open-source virtualization tool for creating virtual 
 
   - To create virtual environments where Wazuh agents are installed:
   - VMware Workstation / VMware Fusion: For creating and managing Windows and Ubuntu virtual machines.
-- VirtualBox: An alternative open-source virtualization tool for creating virtual machines.
- - Hyper-V (Windows-specific): Microsoft's built-in hypervisor for creating and managing virtual machines.
-- Package Managers:
 
- - APT (Advanced Package Tool): Used on Ubuntu to install and manage software packages, including the Wazuh agent.
-Example: sudo apt install wazuh-agent
- - Chocolatey (optional for Windows): A package manager for Windows that can be used to install software like the Wazuh agent if preferred over traditional installers.
+  
 
 ## Step-1
 To install the wazuh agent on our endpoint(windows-machine)<br>
