@@ -53,13 +53,52 @@ Basic Cybersecurity Knowledge:
 
 
 ### Tools Used
-[Bullet Points - Remove this afterwards]
+- Wazuh Agent:
 
-- Security Information and Event Management (SIEM) system for log ingestion and analysis.
-- Network analysis tools (such as Wireshark) for capturing and examining network traffic.
-- Telemetry generation tools to create realistic network traffic and attack scenarios.
+  - The software agent that collects security-related data (logs, file changes, network activity) from the host system (Windows/Ubuntu) and forwards it to the Wazuh Manager for analysis.
+Wazuh Manager:
 
-## Step-1:
+  - Central server where data from agents is processed, correlated, and visualized. It is used to manage agents, configure security rules, and analyze security events.
+Virtualization Tools:
+
+- To create virtual environments where Wazuh agents are installed:
+  - VMware Workstation / VMware Fusion: For creating and managing Windows and Ubuntu virtual machines.
+VirtualBox: An alternative open-source virtualization tool for creating virtual machines.
+
+- Package Managers:
+
+  - APT (Advanced Package Tool): Used on Ubuntu to install and manage software packages, including the Wazuh agent.
+
+
+- Terminal/Command-Line Interface (CLI):
+
+  - Linux/Ubuntu Terminal: For executing system commands, installing the Wazuh agent, managing services, and editing configuration files.
+  - Command Prompt or Windows Terminal: For running basic commands and scripts in the Windows environment.
+- Text Editors:
+  - Used to edit configuration files for the Wazuh agent, especially the ossec.conf file.
+  - Windows: Notepad, Notepad++.
+  - Ubuntu: Nano, Vim, or other CLI-based text editors.
+- System Monitoring and Management Tools:
+  - Systemctl (Ubuntu/Linux): Command-line utility for managing system services (starting, stopping, checking status of the Wazuh agent).
+  - Example: sudo systemctl status wazuh-agent
+  - Windows Services: Used to manage the Wazuh agent service on Windows.
+- Accessed through services.msc.Wazuh Agent:
+  - The software agent that collects security-related data (logs, file changes, network activity) from the host system (Windows/Ubuntu) and forwards it to the Wazuh Manager for analysis.
+- Wazuh Manager:
+  - Central server where data from agents is processed, correlated, and visualized. It is used to manage agents, configure security rules, and analyze security events.
+- Virtualization Tools:
+
+  - To create virtual environments where Wazuh agents are installed:
+  - VMware Workstation / VMware Fusion: For creating and managing Windows and Ubuntu virtual machines.
+- VirtualBox: An alternative open-source virtualization tool for creating virtual machines.
+ - Hyper-V (Windows-specific): Microsoft's built-in hypervisor for creating and managing virtual machines.
+- Package Managers:
+
+ - APT (Advanced Package Tool): Used on Ubuntu to install and manage software packages, including the Wazuh agent.
+Example: sudo apt install wazuh-agent
+ - Chocolatey (optional for Windows): A package manager for Windows that can be used to install software like the Wazuh agent if preferred over traditional installers.
+
+## Step-1
 To install the wazuh agent on our endpoint(windows-machine)<br>
 We go to the wazuh official website to download the package (exe-file)<br>
 It is recommended to install the exefile the gui version for easier installation.<br>
