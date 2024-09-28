@@ -43,10 +43,10 @@ The primary objective of installing the Wazuh agent on both Windows and Ubuntu v
   - Identifying and resolving issues in different operating environments (Windows vs. Ubuntu), including troubleshooting connectivity, configuration, and service errors.
  - Automation and Scripting:
 
-  - Writing or using scripts for automating the installation or configuration process, particularly in Ubuntu using Bash scripting or PowerShell scripting on Windows.
+   - Writing or using scripts for automating the installation or configuration process, particularly in Ubuntu using Bash scripting or PowerShell scripting on Windows.
 Basic Cybersecurity Knowledge:
 
-  - Gaining a foundational understanding of security monitoring principles, log analysis, and how systems are monitored for security threats like malware, unauthorized access, and system changes.
+   - Gaining a foundational understanding of security monitoring principles, log analysis, and how systems are monitored for security threats like malware, unauthorized access, and system changes.
 - Virtualization:
 
    - Setting up and managing virtual machines on hypervisors like VMware, VirtualBox, or Hyper-V to simulate real-world environments.
