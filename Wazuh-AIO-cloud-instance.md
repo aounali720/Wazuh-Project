@@ -3,7 +3,7 @@
 ## Objective
 The objective of this project is to successfully install Wazuh on a Cloud Ubuntu server and configure a Wazuh agent on a designated endpoint. This will enhance security monitoring by providing real-time visibility into system and application logs, threat detection, and compliance management. The project aims to establish a centralized security management system that effectively detects and responds to potential security threats, while also allowing for scalability and flexibility in managing cloud resources. By the end of the project, the Wazuh server should be fully operational, with properly configured agents reporting data back to the server, facilitating a robust security posture.
 ### Skills Learned
-[Bullet Points - Remove this afterwards]
+
 
 - Advanced understanding of SIEM concepts and practical application.
 - Proficiency in analyzing and interpreting network logs.
@@ -12,7 +12,7 @@ The objective of this project is to successfully install Wazuh on a Cloud Ubuntu
 - Development of critical thinking and problem-solving skills in cybersecurity.
 
 ### Tools Used
-[Bullet Points - Remove this afterwards]
+
 
 - Security Information and Event Management (SIEM) system for log ingestion and analysis.
 - Network analysis tools (such as Wireshark) for capturing and examining network traffic.
