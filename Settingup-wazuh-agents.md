@@ -9,7 +9,6 @@ The primary objective of installing the Wazuh agent on both Windows and Ubuntu v
 - System Administration and Configuration:
 
   - Gaining hands-on experience with both Windows and Ubuntu operating systems by installing software, configuring system services, and managing dependencies.
-- Package Management and Software Installation:
 
 - Learning how to install software packages using:
   - Windows: Installing through installers (MSI/EXE) or using PowerShell.
