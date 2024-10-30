@@ -15,8 +15,6 @@ The objective of this project is to successfully install Wazuh on a Cloud Ubuntu
 
 
 - Security Information and Event Management (SIEM) system for log ingestion and analysis.
-- Network analysis tools (such as Wireshark) for capturing and examining network traffic.
-- Telemetry generation tools to create realistic network traffic and attack scenarios.
 
 ## Step-1
 First we are going to login to our cloud instance using ssh<br>
