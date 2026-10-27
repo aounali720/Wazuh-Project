@@ -1,94 +1,10 @@
+# Enrolling Windows and Ubuntu Wazuh agents
 
-# Wazuh-Agents
+This lab connects Windows and Ubuntu endpoints to a Wazuh manager so I can view events from more than one operating system in one place.
 
-## Objective
-The primary objective of installing the Wazuh agent on both Windows and Ubuntu virtual machines and configuring it to connect with the Wazuh Manager is to enable centralized security monitoring, threat detection, and incident response across multiple platforms. The Wazuh agent acts as a local component on the machines that gathers security event data, system logs, and other relevant information, which it then sends to the Wazuh Manager for analysis and correlation.
-### Skills Learned
-- System Administration and Configuration:
+The notes cover package installation, manager IP configuration, service checks and basic connectivity troubleshooting. The endpoints are lab virtual machines; these steps do not establish enterprise-wide monitoring or validate detection coverage.
 
-  - Gaining hands-on experience with both Windows and Ubuntu operating systems by installing software, configuring system services, and managing dependencies.
-
-- Learning how to install software packages using:
-  - Windows: Installing through installers (MSI/EXE) or using PowerShell.
-  - Ubuntu: Using package managers like apt to install the Wazuh agent.
-- Command-Line Proficiency:
-
-   - Linux/Ubuntu: Improving proficiency in terminal commands for navigating the file system, installing software, and managing services.
-   - Windows: Using PowerShell and Command Prompt to configure network settings and install the Wazuh agent.
-- Network Configuration:
-
-   - Understanding how to configure virtual machines to communicate with each other, particularly setting up network interfaces to enable the Wazuh agent to connect to the Wazuh Manager.
-  - Learning about ports, protocols, and firewall settings required for secure communication between the agent and the manager.
-- Agent Configuration:
-
-   -  Editing configuration files on both Windows and Linux systems (e.g., ossec.conf) to connect the Wazuh agent to the Wazuh Manager.
-   -  Understanding configuration parameters, such as manager IP address, agent ID, and encryption options.
-- Service Management:
-
-  -  Starting, stopping, and checking the status of the Wazuh agent service on both operating systems:
-  -  Ubuntu: Using systemctl to manage services.
-  -  Windows: Using services.msc or PowerShell for service control.
-- Log Management and Analysis:
-
-   - Learning where logs are stored on both systems and how to analyze logs to ensure that the Wazuh agent is functioning properly and communicating with the manager.
-   - Troubleshooting any connectivity or configuration issues by reviewing error logs and status reports.
-- Security Monitoring Setup:
-
-  - Understanding the Wazuh security architecture and learning how to set up agents for proactive monitoring, file integrity checking, log analysis, and event correlation across diverse environments.
-- Cross-Platform Troubleshooting:
-
-  - Identifying and resolving issues in different operating environments (Windows vs. Ubuntu), including troubleshooting connectivity, configuration, and service errors.
- - Automation and Scripting:
-
-   - Writing or using scripts for automating the installation or configuration process, particularly in Ubuntu using Bash scripting or PowerShell scripting on Windows.
-Basic Cybersecurity Knowledge:
-
-   - Gaining a foundational understanding of security monitoring principles, log analysis, and how systems are monitored for security threats like malware, unauthorized access, and system changes.
-- Virtualization:
-
-   - Setting up and managing virtual machines on hypervisors like VMware, VirtualBox, or Hyper-V to simulate real-world environments.
-
-
-### Tools Used
-- Wazuh Agent:
-
-  - The software agent that collects security-related data (logs, file changes, network activity) from the host system (Windows/Ubuntu) and forwards it to the Wazuh Manager for analysis.
-Wazuh Manager:
-
-  - Central server where data from agents is processed, correlated, and visualized. It is used to manage agents, configure security rules, and analyze security events.
-Virtualization Tools:
-
-- To create virtual environments where Wazuh agents are installed:
-  - VMware Workstation / VMware Fusion: For creating and managing Windows and Ubuntu virtual machines.
-VirtualBox: An alternative open-source virtualization tool for creating virtual machines.
-
-- Package Managers:
-
-  - APT (Advanced Package Tool): Used on Ubuntu to install and manage software packages, including the Wazuh agent.
-
-
-- Terminal/Command-Line Interface (CLI):
-
-  - Linux/Ubuntu Terminal: For executing system commands, installing the Wazuh agent, managing services, and editing configuration files.
-  - Command Prompt or Windows Terminal: For running basic commands and scripts in the Windows environment.
-- Text Editors:
-  - Used to edit configuration files for the Wazuh agent, especially the ossec.conf file.
-  - Windows: Notepad, Notepad++.
-  - Ubuntu: Nano, Vim, or other CLI-based text editors.
-- System Monitoring and Management Tools:
-  - Systemctl (Ubuntu/Linux): Command-line utility for managing system services (starting, stopping, checking status of the Wazuh agent).
-  - Example: sudo systemctl status wazuh-agent
-  - Windows Services: Used to manage the Wazuh agent service on Windows.
-- Accessed through services.msc.Wazuh Agent:
-  - The software agent that collects security-related data (logs, file changes, network activity) from the host system (Windows/Ubuntu) and forwards it to the Wazuh Manager for analysis.
-- Wazuh Manager:
-  - Central server where data from agents is processed, correlated, and visualized. It is used to manage agents, configure security rules, and analyze security events.
-- Virtualization Tools:
-
-  - To create virtual environments where Wazuh agents are installed:
-  - VMware Workstation / VMware Fusion: For creating and managing Windows and Ubuntu virtual machines.
-
-  
+**Before repeating:** use the current [Wazuh agent installation guides](https://documentation.wazuh.com/current/installation-guide/wazuh-agent/index.html), confirm required ports and restrict access to the manager.
 
 ## Step-1
 To install the wazuh agent on our endpoint(windows-machine)<br>
