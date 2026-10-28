@@ -1,20 +1,10 @@
-# Wazuh-Project
+# Wazuh manager on Ubuntu — setup notes
 
-## Objective
-The objective of this project is to successfully install Wazuh on a Cloud Ubuntu server and configure a Wazuh agent on a designated endpoint. This will enhance security monitoring by providing real-time visibility into system and application logs, threat detection, and compliance management. The project aims to establish a centralized security management system that effectively detects and responds to potential security threats, while also allowing for scalability and flexibility in managing cloud resources. By the end of the project, the Wazuh server should be fully operational, with properly configured agents reporting data back to the server, facilitating a robust security posture.
-### Skills Learned
+I installed Wazuh's all-in-one manager on a cloud Ubuntu VM and used its dashboard to check incoming security events. The goal was to establish a manager that Windows and Ubuntu lab agents could report to.
 
+This page records the initial installation, dashboard access and connection settings. It's a historical lab walkthrough. Wazuh ports and install commands vary by release; follow the [current Wazuh documentation](https://documentation.wazuh.com/current/quickstart.html) for a new deployment.
 
-- Advanced understanding of SIEM concepts and practical application.
-- Proficiency in analyzing and interpreting network logs.
-- Ability to generate and recognize attack signatures and patterns.
-- Enhanced knowledge of network protocols and security vulnerabilities.
-- Development of critical thinking and problem-solving skills in cybersecurity.
-
-### Tools Used
-
-
-- Security Information and Event Management (SIEM) system for log ingestion and analysis.
+**Security note:** don't expose the dashboard or manager ports to the whole internet. Restrict access to trusted addresses, use strong credentials and review cloud firewall rules.
 
 ## Step-1
 First we are going to login to our cloud instance using ssh<br>
